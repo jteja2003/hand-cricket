@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand cricket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hand Cricket</h1>
+    <button>how to play</button>
+    
+    <h3>toss enter 0 or 1 :- <input type="number" min="0" max="1" required></h3>
+    <input placeholder="toss result here" id="toss" readonly>
+    <h3>enter your choice:<input type="number" placeholder="your choice" min="1" max="6"></h3>
+    <h3>system's choice:<input placeholder="bot's choice" value="0" readonly> </h3>
+    <h2>your score:<input placeholder="your score " readonly>system's score:<input placeholder="system's score" readonly></h2>
+    
+    
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hand Cricket</h1>
+    <div class="Container">
+    <button id="playButton" onclick="startGame()">Start Game</button> 
+    <div id="gameControls" style="display:none;">   
+    <!-- <button id="instr" onclick="window.location.href='https:/www.instructables.com/How-to-Play-Hand-Cricket/';">How to Play</button> -->
+    
+    <h3>Toss Enter 0 or 1: <input type="number" min="0" max="1" id="tossInput" onkeypress="handleKeyPress(event);" required></h3>
+    <input placeholder="Toss Result Here" id="tossResult" readonly>
+    <h3>Enter Your Choice: <input type="number" placeholder="Your Choice" min="1" max="6" id="userChoice"></h3>
+    <h3>System's Choice: <input placeholder="Bot's Choice" id="systemChoice" readonly></h3>
+    <h2>Your Score: <input placeholder="Your Score" id="userScore" readonly> System's Score: <input placeholder="System's Score" id="systemScore" readonly></h2>
+    <div class="message-box" id="messageBox"></div>
+    </div>
+    
+    </div>
+    <script src="cricket.js"></script>
+</body>
+</html>

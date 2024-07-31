@@ -36,7 +36,7 @@ function handleToss() {
         userBatting = true;
         currentPlayer = true;
     } else {
-        displayMessage("You lost the toss! You will bowl first.");
+        displayMessage("You lost the toss! You will ball first.");
         userBatting = false;
         currentPlayer = false;
     }
